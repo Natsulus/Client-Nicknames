@@ -1,0 +1,32 @@
+[
+	{
+		"version": "Unreleased",
+		"date": "2016-07-28"
+		"title": "Oh goody!",
+		"notes": {
+			"added": ["The full release of course!"],
+			"changed": [],
+			"deprecated": [],
+			"removed": [],
+			"fixed": [],
+			"security": []
+		}
+	},
+	{
+		"version": "0.7.0",
+		"date": "2016-07-21"
+		"title": "Pre-Release Test",
+		"notes": {
+			"added": [
+				"An update log!"
+			],
+			"changed": [],
+			"deprecated": [
+				"Farewell load & localStorage"
+			],
+			"removed": [],
+			"fixed": [],
+			"security": []
+		}
+	}
+]
