@@ -10,7 +10,8 @@ function ClientNicknames() {
     };
 
     this.getDescription = () => {
-        return "Client Side Nicknames so you don't forget who that person is!";
+        return "Client Side Nicknames so you don't forget who that person is!"
+            + "<br>Contact <i>Natsulus#5647</i> via DM or on the #plugin channel of the Better Discord server.";
     };
 
     this.getVersion = () => {
@@ -31,16 +32,21 @@ function ClientNicknames() {
         this.settings = this.manageSettings("load");
         this.createSettingsPanel();
 
-        // Add Tab Bar Button
-        $(".tab-bar.SIDE").first().append(this.settingsButton);
+        // Add Tab Bar Button when Enabling
+        if ($("form.form.settings.user-settings-modal").length > 0) {
+            $(".tab-bar.SIDE").first().append(this.settingsButton);
+            $(".form .settings-right .settings-inner").last().after(this.settingsPanel);
+        }
 
         // this.loadScript("https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js", "jQuery-Easing");
         console.info("[Client Nicknames] Enabling Plugin");
     };
 
     this.stop = () => {
-        this.settingsButton.hide();
         this.detectRightClick(false);
+        $(".cnick-pane, .cnick-tab, .cnick-tab-bar-item").remove();
+
+        //this.settingsButton.hide();
         console.info("[Client Nicknames] Disabling Plugin");
     };
 
@@ -304,6 +310,11 @@ function ClientNicknames() {
     this.changeTab = tab => {
         this.settingsLastTab = tab;
 
+        $(".cnick-tab").removeClass("selected");
+        $(".cnick-pane").hide();
+        $(`#${tab}-tab`).addClass("selected");
+        $(`#${tab}-pane`).show();
+
         // Unique Tab Change Actions
         switch (tab) {
             case "cnick-nicknames": {
@@ -317,11 +328,6 @@ function ClientNicknames() {
                 break;
             }
         }
-
-        $(".cnick-tab").removeClass("selected");
-        $(".cnick-pane").hide();
-        $(`#${tab}-tab`).addClass("selected");
-        $(`#${tab}-pane`).show();
     };
 
     this.manageNicknames = (action, data) => {
@@ -458,7 +464,7 @@ function ClientNicknames() {
     };
 
     this.updateSettings = checkbox => {
-        //
+        console.log(checkbox);
     };
 
     this.loadScript = (url, item) => {
@@ -664,3 +670,5 @@ When user turns plugin off or removes a nickname, user must refresh page either 
 their actual name if it was loaded on the page before nickname was disabled. There is a solution to this which is to store the original name, however that
 creates too much overhead so I decided against using this solution. If you have a solution to this without too much overhead, please contact me.
 */
+
+// https://natsulus.github.io/Client-Nicknames/plugin/       (updates.json/bg-panel.png/ClientNicknames.plugin.js)

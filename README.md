@@ -2,6 +2,8 @@
 
 A Better Discord plugin so you don't forget who that person is!
 
+**Currently a work in progress. Features below are not ready yet. This is a pre-release both for testing and suggestions.**
+
 ## Features
 
 - Change a user's nickname on a server or globally only for you to see.
@@ -12,7 +14,7 @@ A Better Discord plugin so you don't forget who that person is!
 ## Installation
 
 1. Get <a href="https://github.com/Jiiks/BetterDiscordApp">Better Discord</a>.
-2. Download <a href="">this</a> to `%appdata%\BetterDiscord\plugins`.
+2. Download <a href="https://natsulus.github.io/Client-Nicknames/plugin/ClientNicknames.plugin.js">this</a> to `%appdata%\BetterDiscord\plugins`.
 3. Open or Reload Discord so Better Discord can detect the new plugin.
 4. Go to `User Settings ➙ Better Discord ➙ Plugins` and Enable the Client Nicknames plugin.
 5. Start using the Client Nicknames plugin.
