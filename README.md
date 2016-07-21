@@ -22,7 +22,7 @@ A Better Discord plugin so you don't forget who that person is!
 
 ## FAQ
 
-- **How do I give someone a Client Nickname?** Right click on the user and select the `Change Client Nickname` option. A modal should pop-up where you can give them a nickname, either for that or globally.
+- **How do I give someone a Client Nickname?** Right click on the user and select the `Change Client Nickname` option. A modal should pop-up where you can give them a nickname, either for the current server or globally.
 - **How do I reset a Client Nickname I gave someone?** Just set their Client Nickname to blank. There's also a reset client nickname link which helps you blank the text box.
   
 ## Known Issues

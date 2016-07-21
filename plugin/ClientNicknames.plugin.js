@@ -584,9 +584,9 @@ function ClientNicknames() {
     };
 }
 
-////////////
-// Notes //
-////////////
+/////////////
+//  Notes  //
+/////////////
 
 /*
 {
@@ -644,26 +644,7 @@ function ClientNicknames() {
  onMemberLoad (List)
 */
 
-/*
- BdApi.joinServer("code"); // Use to join my server.
- BdApi.injectCSS("id", "css"); // Use this to inject css instead
- BdApi.clearCSS("id"); // Use this to clear CSS with the identifier id
- BdApi.getPlugin("name"); // Interact with other plugins
- BdApi.getIPC(); // Currently useless.
- BdApi.getCore(); // Get BD Core Module
- BdApi.getUserIdByName("name"); // Exactly what it says
- BdApi.getUserNameById("id"); // Exactly what it says
-
- var blah = require("fs"); // Pure Node.js Modules are usable
-
- setInterval(blah, 1000); // Timers are throttled by at least 1000ms when minimised
-
- Examples:
- https://i.jiiks.net/0MTI1M.js
- https://gist.github.com/megamit/a676acb2f34b201e364858aca299fb44
- https://gist.github.com/megamit/29757d819de5356595271cebb577f6a8
- https://gist.github.com/kosshishub/cc96972eff5d1ee3feca98b7f3fd586b
-*/
+// Timers are throttled by at least 1000ms when minimised
 
 /*
 When user turns plugin off or removes a nickname, user must refresh page either by reloading or switching channels/server for the nicknames disabled to see
